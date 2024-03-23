@@ -41,7 +41,7 @@ This repository is the official PyTorch implementation of "Fully 1×1 Convolutio
 </div>
 
 
-## Run
+## Train
 
 All experiments are evaluated based on [BasicSR](https://github.com/XPixelGroup/BasicSR), and we provide a minimal implementation in `SCNet_arch.py`.
 
@@ -53,10 +53,11 @@ And for testing:
 ```
 python basicsr/test.py -opt options/test/SCNet/SCNet-T-x4.yml
 ```
+## License
+This code is licensed under the [Creative Commons Attribution-NonCommercial 4.0 International](https://creativecommons.org/licenses/by-nc/4.0/) for non-commercial use only. Please note that any commercial use of this code requires formal permission prior to use.
 
-
-
-
+## Acknowledgement
+The codes are based on [BasicSR](https://github.com/XPixelGroup/BasicSR). Thanks for their nice sharing.
 
 
 
