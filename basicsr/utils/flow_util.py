@@ -29,7 +29,7 @@ def flowread(flow_path, quantize=False, concat_axis=0, *args, **kwargs):
         with open(flow_path, 'rb') as f:
             try:
                 header = f.read(4).decode('utf-8')
-            except Exception:
+            except (OSError, UnicodeDecodeError):
                 raise IOError(f'Invalid flow file: {flow_path}')
             else:
                 if header != 'PIEH':
